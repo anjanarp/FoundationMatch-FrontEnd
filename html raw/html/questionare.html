@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="qa_style.css" />
+        <title>preferences</title>
+    </head>
+    <body>
+        <h1>choose your preferences</h1>
+
+        <form name="" method="" action="">
+            <div class="form__fieldset form_top">
+                <h2 for="jewelry" class="form__label"></label>select your jewelry metal of choice</h2>
+                <input name="silver" class="form__jewelry" type="image" src="silver.jpg" height="150" width="150">
+                <input name="gold" class="form__jewelry" type="image" src="gold.jpg" height="150" width="150">
+                <input name="rosegold" class="form__jewelry" type="image" src="rosegold2.jpg" height="150" width="150">
+            </div>
+
+            <div class="form__fieldset">
+                <h2 for="coverage" class="form__label"></label>select your coverage</h2>
+                <select name="coverage" id="coverage" class="form__input">
+                    <option value="select an option">select an option</option>
+                    <option value="light-coverage">light-coverage</option>
+                    <option value="medium-coverage">medium-coverage</option>
+                    <option value="full-coverage">full-coverage</option>
+                </select>
+            </div>
+
+            <div class="form__fieldset">
+                <h2 for="finish" class="form__label"></label>select your finish</h2>
+                <select name="finish" id="finish" class="form__input">
+                    <option value="select an option">select an option</option>
+                    <option value="dewy">dewy</option>
+                    <option value="matte">matte</option>
+                </select>
+            </div>
+
+            <div class="form__fieldset">
+                <h2 for="concerns" class="form__label"></label>select your skin type</h2>
+                    <input type="checkbox" id="dry" name="dry" value="dry" class="boxcheck" >
+                    <label for="dry">dry</label><br>
+                    <input type="checkbox" id="oily" name="oily" value="oily" class="boxcheck">
+                    <label for="oily">oily</label><br>
+                    <input type="checkbox" id="normal" name="normal" value="normal" class="boxcheck">
+                    <label for="normal">normal</label><br>    
+            </div>
+
+            <div class="form__fieldset form__label">
+                <h3>for the following responses, use a picture that contains only your face as the main focus and avoid pictures with high exposure or shadows</h3>
+            </div>
+
+
+            <div class="form__fieldset form__label">
+                <h2 for="user_pic" class="form__label"></label>submit a picture of your forehead</h2>
+                <p>crop the picture to only include as much of your forehead as possible</p>
+                <img id="target"/>
+                <input type="file" class="form__input" id="user_pic" name="user_pic" onchange="" />
+            </div>
+
+            <div class="form__fieldset form__label">
+                <h2 for="user_pic" class="form__label"></label>submit a picture of the left side of your face</h2>
+                <p>crop the picture to only include as much of the left side of your face as possible</p>
+                <img id="target"/>
+                <input type="file" class="form__input" id="user_pic" name="user_pic" onchange="" />
+            </div>
+            
+            <div class="form__fieldset form__label">
+                <h2 for="user_pic" class="form__label"></label>submit a picture of the right side of your face</h2>
+                <p>crop the picture to only include as much of the right side of your face as possible</p>
+                <img id="target"/>
+                <input type="file" class="form__input" id="user_pic" name="user_pic" onchange="" />
+            </div>
+
+            <div class="form__fieldset form__visible">
+                <form action="html/account.html">
+                    <input
+                        class="form__submit form__input" 
+                        type="submit" 
+                        value="get your beauty box"
+                    />
+                </form>
+            </div>
+
+            <div class="form__fieldset form__label">
+                <h2 for="date" class="form__label"></label>enter today's date</h2>
+                <input type="date" class="form__input" id="date" name="date" onchange="" />
+            </div>
+            
+            <div class="form__fieldset">
+                <form action="html/account.html">
+                    <input
+                        class="form__submit form__input" 
+                        type="submit" 
+                        value="submit your responses"
+                    />
+                </form>
+            </div>
+
+
+
+        </form>
+    </body>
+</html>
+
+

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+div.container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-top: 30px;
+	padding: 21px;
+	border-radius: 4px;
+}
+
+:root {
+	--omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+	--omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+	--omrs-color-ink-medium-contrast: #1c2023;
+	--omrs-color-interaction: #1c2023;
+	--omrs-color-interaction-minus-two: rgba(131, 132, 135, 0.12);
+	--omrs-color-bg-low-contrast: #eff1f2;
+	--omrs-color-ink-high-contrast: #121212;
+	--omrs-color-bg-high-contrast: #ffffff;
+	
+}
+div.input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20.4375rem;
+}
+
+/* Input*/
+.input-underlined > input,
+.input-filled > input {
+	border: none;
+	border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+	width: 100%;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+.input-underlined > input:focus,
+.input-filled > input:focus {
+	outline: none;
+}
+
+.input-underlined > .input-label,
+.input-filled > .input-label {
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 147.6%;
+	color: var(--omrs-color-ink-medium-contrast);
+	transition: top .2s;
+}
+
+.input-underlined> svg ,
+.input-filled > svg {
+	position: absolute;
+	top: 0.9375rem;
+	right: 0.875rem;
+	fill: var(--omrs-color-ink-medium-contrast);
+}
+
+.input-underlined > .input-helper,
+.input-filled > .input-helper {
+	font-size: 0.9375rem;
+	color: var(--omrs-color-ink-medium-contrast);
+	letter-spacing: 0.0275rem;
+	margin: 0.125rem 0.875rem;
+}
+
+.input-underlined > input:hover,
+.input-filled > input:hover {
+	background: var(--omrs-color-interaction-minus-two);
+	border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.input-underlined > input:focus + .input-label,
+.input-underlined > input:valid + .input-label,
+.input-filled > input:focus + .input-label,
+.input-filled > input:valid + .input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;;
+}
+
+.input-underlined:not(.input-danger) > input:focus + .input-label,
+.input-filled:not(.input-danger) > input:focus + .input-label {
+	color: var(--omrs-color-interaction);
+}
+
+.input-underlined > input:disabled {
+	background: var(--omrs-color-bg-low-contrast);
+	cursor: not-allowed;
+}
+
+.input-underlined > input:disabled + .input-label,
+.input-underlined > input:disabled ~ .input-helper{
+	color: var(--omrs-color-ink-low-contrast);
+}
+
+.input-underlined > input:disabled ~ svg {
+	fill: var(--omrs-color-ink-low-contrast);
+}
+
+
+/** DANGER **/
+
+.input-underlined.input-danger > .input-label, .input-underlined.input-danger > .input-helper,
+.input-filled.input-danger > .input-label, .input-filled.input-danger > .input-helper{
+	color: var(--omrs-color-danger);
+}
+
+.input-underlined > input {
+	background: var(--omrs-color-bg-high-contrast);
+}
+.input-filled > input {
+	background: var(--omrs-color-bg-low-contrast);
+}
+
+.form__submit {
+  padding: 25px 25px;
+  background-color: unset;
+  border: 2px solid #1c2023;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+.form__submit:hover {
+  background-color: #1c2023;
+  color: white;
+}
+
+.form__fieldset {
+  padding: 20px 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.form__fieldset:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  padding-bottom: 40px;
+}
+
+
+.form__input {
+  font-size: .9rem;
+  padding: 4px 6px;
+}
